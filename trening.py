@@ -3,9 +3,9 @@ import tensorflow_datasets as tfds
 
 # Parametry
 BATCH_SIZE = 128
-EPOCHS = 5
-MODEL_PATH = "emnist_model.h5"               # <-- Model wejściowy
-OUTPUT_MODEL_PATH = "emnist_model_updated.h5"  # <-- Model po kontynuacji
+EPOCHS = 10
+MODEL_PATH = "emnist_model2.h5"               # <-- Model wejściowy
+OUTPUT_MODEL_PATH = "emnist_model2_updated.h5"  # <-- Model po kontynuacji
 
 # Wczytanie modelu
 model = tf.keras.models.load_model(MODEL_PATH)

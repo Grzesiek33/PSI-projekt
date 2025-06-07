@@ -6,7 +6,7 @@ import os
 # Ustawienia
 BATCH_SIZE = 128
 EPOCHS = 10
-MODEL_PATH = "emnist_model.h5"
+MODEL_PATH = "emnist_model2.h5"
 
 # Ładowanie EMNIST (byclass)
 print("📥 Ładowanie zbioru EMNIST...")
@@ -41,7 +41,28 @@ def create_emnist_model(input_shape=(28, 28, 1), num_classes=NUM_CLASSES):
     ])
     return model
 
-model = create_emnist_model()
+def create_better_emnist_model(input_shape=(28, 28, 1), num_classes=NUM_CLASSES):
+    model = tf.keras.Sequential([
+        tf.keras.layers.Conv2D(64, (3, 3), activation='relu', input_shape=input_shape),
+        tf.keras.layers.BatchNormalization(),
+        tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
+        tf.keras.layers.MaxPooling2D((2, 2)),
+        tf.keras.layers.Dropout(0.25),
+
+        tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),
+        tf.keras.layers.BatchNormalization(),
+        tf.keras.layers.MaxPooling2D((2, 2)),
+        tf.keras.layers.Dropout(0.25),
+
+        tf.keras.layers.Flatten(),
+        tf.keras.layers.Dense(256, activation='relu'),
+        tf.keras.layers.BatchNormalization(),
+        tf.keras.layers.Dropout(0.5),
+        tf.keras.layers.Dense(num_classes, activation='softmax')
+    ])
+    return model
+
+model = create_better_emnist_model()
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
