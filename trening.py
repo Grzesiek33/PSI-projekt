@@ -18,10 +18,11 @@ def preprocess(image, label):
     return image, label
 
 # Ładowanie danych
-(ds_train, ds_test), _ = tfds.load(
+(ds_train, ds_test), info = tfds.load(
     'emnist/byclass',
     split=['train', 'test'],
-    as_supervised=True
+    as_supervised=True,
+    with_info=True
 )
 
 ds_train = ds_train.map(preprocess).shuffle(10000).batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)
