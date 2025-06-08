@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2468574-41c2-4d02-ac18-359ce292c9c2" name="Changes" comment="pierwszy commit" />
+    <list default="true" id="e2468574-41c2-4d02-ac18-359ce292c9c2" name="Changes" comment="pierwszy commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emnist_model_aug_updated3.h5" beforeDir="false" afterPath="$PROJECT_DIR$/emnist_model_aug_updated3.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trening.py" beforeDir="false" afterPath="$PROJECT_DIR$/trening.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trening_aug.py" beforeDir="false" afterPath="$PROJECT_DIR$/trening_aug.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +51,6 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.czy gpu.executor": "Run",
     "Python.main.executor": "Run",
-    "Python.main_aug.executor": "Run",
     "Python.test.executor": "Run",
     "Python.trening.executor": "Run",
     "Python.trening_aug.executor": "Run",
@@ -78,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749219737509</updated>
       <workItem from="1749219737899" duration="2500000" />
-      <workItem from="1749282274269" duration="3784000" />
+      <workItem from="1749282274269" duration="8366000" />
     </task>
     <task id="LOCAL-00001" summary="pierwszy commit">
       <option name="closed" value="true" />
@@ -106,21 +110,13 @@
     </task>
     <task id="LOCAL-00004" summary="pierwszy commit">
       <option name="closed" value="true" />
-      <created>1749310957809</created>
+      <created>1749287614234</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1749310957809</updated>
+      <updated>1749287614234</updated>
     </task>
-    <task id="LOCAL-00005" summary="pierwszy commit">
-      <option name="closed" value="true" />
-      <created>1749321459840</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1749321459840</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,23 +126,11 @@
     <MESSAGE value="pierwszy commit" />
     <option name="LAST_COMMIT_MESSAGE" value="pierwszy commit" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main_aug.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PSI_projekt$czy_gpu.coverage" NAME="czy gpu Coverage Results" MODIFIED="1749287573390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PSI_projekt$trening.coverage" NAME="trening Coverage Results" MODIFIED="1749331890739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PSI_projekt$test.coverage" NAME="test Coverage Results" MODIFIED="1749286943530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PSI_projekt$main.coverage" NAME="main Coverage Results" MODIFIED="1749283876327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PSI_projekt$test.coverage" NAME="test Coverage Results" MODIFIED="1749304081145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PSI_projekt$czy_gpu.coverage" NAME="czy gpu Coverage Results" MODIFIED="1749303777450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PSI_projekt$trening.coverage" NAME="trening Coverage Results" MODIFIED="1749304429878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PSI_projekt$main_aug.coverage" NAME="main_aug Coverage Results" MODIFIED="1749311399086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PSI_projekt$trening_aug.coverage" NAME="trening_aug Coverage Results" MODIFIED="1749319063482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PSI_projekt$trening_aug.coverage" NAME="trening_aug Coverage Results" MODIFIED="1749331667221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
