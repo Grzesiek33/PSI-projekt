@@ -5,7 +5,7 @@ import numpy as np
 import random
 
 # Wczytanie modelu
-model = tf.keras.models.load_model("emnist_model2.h5")
+model = tf.keras.models.load_model("emnist_model_updated5_aug.h5")
 print("✅ Model załadowany.")
 
 # EMNIST - ten sam preprocessing co wcześniej
@@ -45,3 +45,15 @@ for image, label in ds_test.shuffle(1000).take(1):
     plt.title(f"Prawdziwa: {emnist_labels[int(label)]} / Przewidziana: {emnist_labels[predicted_class]}")
     plt.axis("off")
     plt.show()
+
+# Ładowanie i przygotowanie zbioru treningowego
+ds_train = tfds.load('emnist/byclass', split='train', as_supervised=True)
+ds_train = ds_train.map(preprocess).batch(32)
+
+# Oblicz accuracy na zbiorze treningowym
+train_loss, train_acc = model.evaluate(ds_train, verbose=0)
+print(f"✅ Accuracy na zbiorze treningowym: {train_acc:.4f}")
+
+# Oblicz accuracy na zbiorze testowym
+test_loss, test_acc = model.evaluate(ds_test, verbose=0)
+print(f"✅ Accuracy na zbiorze testowym: {test_acc:.4f}")
