@@ -5,7 +5,7 @@ import numpy as np
 import random
 
 # Wczytanie modelu
-model = tf.keras.models.load_model("emnist_model_updated5_aug.h5")
+model = tf.keras.models.load_model("emnist_model_updated5_aug2.h5")
 print("✅ Model załadowany.")
 
 # EMNIST - ten sam preprocessing co wcześniej

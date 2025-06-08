@@ -5,17 +5,18 @@ import tensorflow_datasets as tfds
 BATCH_SIZE = 128
 EPOCHS = 50
 
-MODEL_PATH = "emnist_model_updated5_aug.h5"               # <-- Model wejściowy
-OUTPUT_MODEL_PATH = "emnist_model_updated5_aug.h5"  # <-- Model po kontynuacji
+MODEL_PATH = "emnist_model_updated5_aug2.h5"               # <-- Model wejściowy
+OUTPUT_MODEL_PATH = "emnist_model_updated5_aug3.h5"  # <-- Model po kontynuacji
 
 # Wczytanie modelu
 model = tf.keras.models.load_model(MODEL_PATH)
 print("✅ Model załadowany.")
 
 data_augmentation = tf.keras.Sequential([
-    tf.keras.layers.RandomRotation(0.1),
-    tf.keras.layers.RandomTranslation(0.1, 0.1),
-    tf.keras.layers.RandomZoom(0.1)
+    tf.keras.layers.RandomRotation(0.1),  # ±10% obrotu
+    tf.keras.layers.RandomTranslation(0.1, 0.1),  # ±10% przesunięcia
+    tf.keras.layers.RandomZoom(0.1),  # ±10% zoomu
+    tf.keras.layers.GaussianNoise(0.05)
 ])
 
 # Preprocessing danych
